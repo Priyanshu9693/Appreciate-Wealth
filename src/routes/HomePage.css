@@ -1,0 +1,83 @@
+/* General container styling */
+.home-container {
+  text-align: center;
+  padding: 40px 20px; /* Added more padding for better spacing */
+  background-color: #edf2f4; /* Light background for contrast */
+}
+
+h1 {
+  font-size: 3rem; /* Increased font size for emphasis */
+  margin-bottom: 20px; /* More spacing under header */
+  color: #2b2d42; /* Darker color for the header */
+}
+
+p {
+  font-size: 1.4rem; /* Increased paragraph font size */
+  margin-bottom: 30px; /* Larger margin for better separation */
+  color: #8d99ae; /* Softer color for the paragraph text */
+}
+
+/* Services container to hold the cards */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* Increased gap for more spacing */
+}
+
+/* Individual service card styling */
+.service-card {
+  width: 180px; /* Larger card size */
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 15px; /* Slightly larger rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #2b2d42; /* Darker text color for readability */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smoother and longer transition */
+}
+
+.service-card:hover {
+  transform: scale(1.1); /* Increased scale effect */
+  background-color: #f8f9fa; /* Light background change on hover */
+}
+
+/* Chat, FAQs, and About specific styling */
+.chat, .faqs, .about {
+  background-color: #ef233c; /* Brighter red color */
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Image styling inside translator card */
+.translator img {
+  width: 70px;   /* Larger image size */
+  height: 70px;
+  object-fit: contain; /* Maintains aspect ratio */
+}
+
+/* Service link styling */
+.service-link {
+  text-decoration: none;
+  color: inherit; /* Inherit color to match the card's text color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing on small screens */
+  }
+
+  .service-card {
+    width: 140px; /* Smaller card size */
+    height: 140px;
+  }
+
+  .translator img {
+    width: 60px;
+    height: 60px;
+  }
+}

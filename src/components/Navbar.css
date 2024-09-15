@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2b2d42; /* Darker background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #edf2f4; /* Light text for contrast */
+}
+
+.navbar-logo img {
+  height: 50px; /* Larger logo size */
+  margin-right: 15px;
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.navbar-logo img:hover {
+  transform: rotate(360deg); /* Rotate logo on hover */
+}
+
+.navbar-logo span {
+  font-size: 1.75rem; /* Slightly larger text */
+  font-weight: bold;
+  letter-spacing: 2px; /* Spacing between letters for elegance */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Larger gap for more spacing */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #8d99ae; /* Muted light color */
+  font-size: 1.1rem; /* Increased font size */
+  font-weight: 600; /* Bolder links */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar-link:hover {
+  color: #ef233c; /* Brighter red hover color */
+  text-decoration: none; /* No underline on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbar-link:active {
+  color: #d90429; /* Active state darker red */
+}
